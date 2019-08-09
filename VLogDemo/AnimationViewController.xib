@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimationViewController">
+            <connections>
+                <outlet property="animationStylePicker" destination="b84-KW-h0F" id="Mqf-Rp-SXg"/>
+                <outlet property="slider" destination="ayb-ii-lHn" id="hsP-ys-z9r"/>
+                <outlet property="starbutton" destination="Rny-C8-UqS" id="yX3-Za-Waf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b84-KW-h0F">
+                    <rect key="frame" x="0.0" y="586" width="414" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="2VP-Ux-28p"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JdD-ib-woK"/>
+                        <outlet property="delegate" destination="-1" id="TQK-hq-JYp"/>
+                    </connections>
+                </pickerView>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.01" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ayb-ii-lHn">
+                    <rect key="frame" x="38" y="51" width="338" height="31"/>
+                    <connections>
+                        <action selector="valueChage:" destination="-1" eventType="valueChanged" id="94m-RO-oZP"/>
+                    </connections>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rny-C8-UqS">
+                    <rect key="frame" x="157" y="115" width="100" height="30"/>
+                    <color key="backgroundColor" red="0.57254901960000004" green="0.29803921570000003" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="a1s-zm-P7A"/>
+                        <constraint firstAttribute="width" constant="100" id="eit-ka-idy"/>
+                    </constraints>
+                    <state key="normal" title="开始"/>
+                    <state key="selected" title="暂停"/>
+                    <connections>
+                        <action selector="startButtonClick:" destination="-1" eventType="touchUpInside" id="ckG-tT-P4s"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rny-C8-UqS" firstAttribute="top" secondItem="ayb-ii-lHn" secondAttribute="bottom" constant="34" id="6AW-vv-XzD"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="b84-KW-h0F" secondAttribute="bottom" id="6PS-UX-Kxc"/>
+                <constraint firstItem="ayb-ii-lHn" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="31" id="ATc-z2-wVD"/>
+                <constraint firstItem="Rny-C8-UqS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GPx-yD-9Wp"/>
+                <constraint firstAttribute="trailing" secondItem="b84-KW-h0F" secondAttribute="trailing" id="R5i-kc-cIx"/>
+                <constraint firstItem="b84-KW-h0F" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="STb-CP-aE4"/>
+                <constraint firstItem="ayb-ii-lHn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="40" id="p9Z-hV-Ya2"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ayb-ii-lHn" secondAttribute="trailing" constant="40" id="yeS-DP-jGa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

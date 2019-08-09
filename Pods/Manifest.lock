@@ -1,0 +1,24 @@
+PODS:
+  - GPUImage (0.1.7)
+  - lottie-ios (2.0.6)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - GPUImage
+  - lottie-ios (~> 2.0.5)
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GPUImage
+    - lottie-ios
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  lottie-ios: 601c75ad9b5f27857f6221c5e7f4a12d23f5e779
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 089e5b1d9639129953d50ed7098f119a6b836d1f
+
+COCOAPODS: 1.6.1

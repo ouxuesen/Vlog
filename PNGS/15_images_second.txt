@@ -1,0 +1,2 @@
+All animations should played at 15 images per second speed. 
+GIFs do not match that speed because there is no way to set image per second for them.
